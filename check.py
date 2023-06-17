@@ -11,7 +11,7 @@ def error(msg):
 def main(argv):
     # Check valid number of arguments
     if len(argv) != 4:
-        error('Usage: python3 test.py BinFileName CompressedFileName DecompressedFileName')
+        error('Usage: python3 check.py OriginalFileName CompressedFileName DecompressedFileName')
         sys.exit(1)
 
     # Read in the .bin files
