@@ -1,3 +1,9 @@
+/**
+ * References:
+ * - https://algs4.cs.princeton.edu/55compression/Huffman.java.html
+ * - https://algs4.cs.princeton.edu/code/edu/princeton/cs/algs4/BinaryOut.java.html
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -18,6 +24,7 @@ using std::unordered_map, std::priority_queue, std::vector;
 class BinaryOut {
     // Use unsigned char to represent 8 bits, s.t. >> pads in 0
     using byte = unsigned char;
+
     // technically bool is still 8-bit, but let's just use it like 1 bit
     // where true is 1, false is 0
     using bit = bool;
@@ -44,9 +51,8 @@ private:
         // write one bit at a time to the buffer, from MSB to LSB
         else {
             for (int i = 0; i < 8; i++) {
-                // NOTE: this works since byte pads 0 from left
-                bool bit = ((x >> (8 - i - 1)) & 1) == 1;
-                writeBitHelper(bit);
+                bool b = ((x >> (8 - i - 1)) & 1) == 1;
+                writeBitHelper(b);
             }
         }
     }
@@ -196,7 +202,7 @@ void compress(string &bytes, BinaryOut &out) {
 int main(int argc, char **argv)
 {
     if (argc != 2) {
-        cout << "Usage: compress.exe testcaseName.bin" << endl;
+        cout << "Usage: compress.exe filename.bin" << endl;
         return 1;
     }
 
