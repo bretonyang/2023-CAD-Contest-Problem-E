@@ -1,0 +1,8 @@
+.vscode/
+*.bin
+*.layout
+*.depend
+bin/
+obj/
+*.txt
+*.java
