@@ -2,6 +2,8 @@
  * References:
  * - https://algs4.cs.princeton.edu/55compression/Huffman.java.html
  * - https://algs4.cs.princeton.edu/code/edu/princeton/cs/algs4/BinaryOut.java.html
+ *
+ * To compile this program on linux, use: g++ -std=c++11 -o compress compress.cpp
  */
 
 #include <iostream>
@@ -11,10 +13,16 @@
 #include <queue>
 #include <vector>
 
-using std::cout, std::endl;
-using std::ifstream, std::ios, std::istreambuf_iterator, std::ofstream;
+using std::cout;
+using std::endl;
+using std::ifstream;
+using std::ios;
+using std::istreambuf_iterator;
+using std::ofstream;
 using std::string;
-using std::unordered_map, std::priority_queue, std::vector;
+using std::unordered_map;
+using std::priority_queue;
+using std::vector;
 
 
 /**

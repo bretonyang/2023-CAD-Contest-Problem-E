@@ -6,3 +6,4 @@ bin/
 obj/
 *.txt
 *.java
+*.bit

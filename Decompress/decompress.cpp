@@ -3,6 +3,8 @@
  * - https://algs4.cs.princeton.edu/55compression/Huffman.java.html
  * - https://algs4.cs.princeton.edu/code/edu/princeton/cs/algs4/BinaryOut.java.html
  * - https://algs4.cs.princeton.edu/code/edu/princeton/cs/algs4/BinaryIn.java.html
+ *
+ * To compile this program on linux, use: g++ -std=c++11 -o decompress decompress.cpp
  */
 
 #include <iostream>
@@ -11,8 +13,12 @@
 #include <string>
 
 using std::runtime_error;
-using std::cout, std::endl;
-using std::ifstream, std::ios, std::istreambuf_iterator, std::ofstream;
+using std::cout;
+using std::endl;
+using std::ifstream;
+using std::ios;
+using std::istreambuf_iterator;
+using std::ofstream;
 using std::string;
 
 
