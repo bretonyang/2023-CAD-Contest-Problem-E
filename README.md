@@ -1,4 +1,4 @@
-# CAD Contest 2023 Problem E
+# CAD Contest 2023 Problem E: Lossless Data Compression for Memory Hard Repair
 
 ## Execution
 
@@ -15,5 +15,5 @@ This will generate the decompressed binary file named: exampleDecompressed.bin
 To compress a given binary file example.bin, run: ./build/linux/compress example.bin
 This will generate the compressed binary file named: exampleCompressed.bin
 
-To decompress a compressed binary file, run: ./decompress exampleCompressed.bin
+To decompress a compressed binary file, run: ./build/linux/decompress exampleCompressed.bin
 This will generate the decompressed binary file named: exampleDecompressed.bin
